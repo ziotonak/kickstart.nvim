@@ -1016,6 +1016,15 @@ require('lazy').setup({
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
+    {
+      'lervag/vimtex',
+      lazy = false, -- we don't want to lazy load VimTeX
+      -- tag = "v2.15", -- uncomment to pin to a specific release
+      init = function()
+        -- VimTeX configuration goes here, e.g.
+        vim.g.vimtex_view_method = 'zathura'
+      end,
+    },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
     --
