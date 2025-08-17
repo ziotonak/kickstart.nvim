@@ -1050,7 +1050,7 @@ require('lazy').setup({
         provider = 'copilot',
         providers = {
           copilot = {
-            model = 'claude-sonnet-4-20250514',
+            model = 'gpt-5',
             timeout = 30000, -- in milliseconds
             context_window = 128000,
             extra_request_body = {
