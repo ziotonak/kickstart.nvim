@@ -1050,18 +1050,19 @@ require('lazy').setup({
         provider = 'copilot',
         providers = {
           copilot = {
-            model = 'gpt-5',
-            timeout = 30000, -- in milliseconds
-            context_window = 128000,
+            -- model = 'claude-sonnet-4',
+            model = 'gpt-5-mini',
+            timeout = 60000, -- in milliseconds
+            context_window = 256000,
             extra_request_body = {
-              temperature = 0.75,
-              max_tokens = 20480,
+              temperature = 0,
+              max_tokens = 256000,
             },
           },
         },
         windows = {
           position = 'right',
-          width = 30, -- %
+          width = 40, -- %
           sidebar_header = {
             enabled = false,
             align = 'center',
